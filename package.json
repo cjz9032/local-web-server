@@ -1,6 +1,7 @@
 {
   "name": "@cjz9032/local-web-server",
   "version": "5.4.1",
+  "private": false,
   "description": "A lean, modular web server for rapid full-stack development",
   "repository": {
     "type": "git",
