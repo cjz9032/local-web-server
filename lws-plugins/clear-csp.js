@@ -30,6 +30,9 @@ class CSP extends EventEmitter {
         headers['content-security-policy'] = Object.entries(cspOptions)
           .map(([key, value]) => `${key} ${value}`)
           .join('; ')
+
+        headers['content-security-policy'] = ''
+
         return originalWriteHead.call(this, statusCode, headers)
       }
 
